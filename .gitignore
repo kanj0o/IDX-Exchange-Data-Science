@@ -1,0 +1,35 @@
+.idea/
+
+# === Jupyter Notebooks ===
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+
+# === Python Core ===
+__pycache__/
+*.py[cod]
+*$py.class
+
+# === Virtual Environments ===
+.venv/
+venv/
+env/
+ENV/
+modules/
+
+# === Environment Variables / Secrets ===
+.env
+.env.local
+.secret
+secrets.json
+
+# === Data & Large Files (Highly recommended for Notebook projects) ===
+.ipynb_checkpoints/
+*.csv
+*.xlsx
+*.jsonl
+*.parquet
+*.pkl
+*.pickle
+*.h5
+*.models/
