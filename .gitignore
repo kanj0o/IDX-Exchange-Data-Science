@@ -17,13 +17,11 @@ env/
 ENV/
 modules/
 
-# === Environment Variables / Secrets ===
+# === Environment Variables ===
 .env
 .env.local
-.secret
-secrets.json
 
-# === Data & Large Files (Highly recommended for Notebook projects) ===
+# === Data & Large Files ===
 .ipynb_checkpoints/
 *.csv
 *.xlsx
@@ -33,3 +31,4 @@ secrets.json
 *.pickle
 *.h5
 *.models/
+*.py
