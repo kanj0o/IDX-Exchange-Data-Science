@@ -31,10 +31,4 @@ modules/
 *.h5
 *.models/
 *.py
-
-# === CSVs ===
-data/listing
-data/sold/raw/
-data/sold/cleaned/
-data/sold/cleaned_all.csv
-data/sold/split/
+*.csv
