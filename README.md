@@ -17,6 +17,7 @@ columns include [list a few]. The raw data is not included because
    (code/01_exploration.ipynb).
 2. Cleaned the data: [fixed bad values, handled missing values, standardized
    formats] (code/02_preprocessing.ipynb).
+3. Evaluated the cleaned data on various models: Multiple Linear Regression, Decision Tree, Random Forest, LightGBM, and XGBoost.
 
 ## Tools & Libraries
 Python, pandas, NumPy, matplotlib, Jupyter Notebook
