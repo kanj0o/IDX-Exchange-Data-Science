@@ -4,28 +4,32 @@
 
 ## Project Overview
 Raw data is often messy, and messy data leads to wrong conclusions. This
-project explores a [real estate transaction] dataset to find problems like
+project explores a California housing price dataset to find problems like
 missing or unrealistic values, then cleans it so it is ready for analysis.
 
 ## Data Source
-[Describe the data in general terms.] Each row is [one transaction]. Key
-columns include [list a few]. The raw data is not included because
-[reason]. See data/README.md.
+The datasets containing historical close price (final sales price)
+data on real estate properties sourced from CRMLS (California Regional Multiple Listing
+Service), including various features such as living area, number of bedrooms,
+bathrooms, lot size, and close prices, with ClosePrice being the target variable.
+Each row is one transaction.
+Key columns include BathroomsTotalInteger, BedroomsTotal, and LivingArea.
+The raw data is not included publically as requested by IDX Exchange.
+See README.md.
 
 ## Methodology
 1. Explored the data: size, column types, missing values, and distributions
-   (code/01_exploration.ipynb).
+   (01_exploration.ipynb).
 2. Cleaned the data: [fixed bad values, handled missing values, standardized
-   formats] (code/02_preprocessing.ipynb).
+   formats] (02_preprocessing.ipynb).
 3. Evaluated the cleaned data on various models: Multiple Linear Regression, Decision Tree, Random Forest, LightGBM, and XGBoost.
 
 ## Tools & Libraries
 Python, pandas, NumPy, matplotlib, Jupyter Notebook
 
 ## Key Findings
-- [Finding 1, e.g., X% of rows were missing a value in column Y.]
-- [Finding 2, e.g., Z rows had impossible values and were removed or fixed.]
-- See figures/ for charts.
+- All models performed better than the null model.
+- Model performance capped out at around <0.9 R^2
 
 ## Limitations
 - Cleaning choices (removing rows, filling in values) could affect results.
@@ -33,5 +37,5 @@ Python, pandas, NumPy, matplotlib, Jupyter Notebook
 
 ## Reproducibility
 1. Clone the repo and install packages: `pip install -r requirements.txt`
-2. Put the dataset in the `data/` folder (see data/README.md).
+2. Put the dataset in the `data/` folder
 3. Run `code/01_exploration.ipynb`, then `code/02_preprocessing.ipynb`.
