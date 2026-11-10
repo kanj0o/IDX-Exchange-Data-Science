@@ -18,7 +18,7 @@ LotSize. I only used rows where PropertyType is "Residential" and
 PropertySubType is "SingleFamilyResidence."
 
 The raw data is not included in this repository because it was provided
-through the internship and is not mine to redistribute. See data/README.md.
+through the internship and is not mine to redistribute.
 
 ## Methodology
 1. Explored the data: size, column types, missing values, and distributions
